@@ -22,112 +22,112 @@ Partial Class frmEddiesEquipment
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.lblItem = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.ListBox2 = New System.Windows.Forms.ListBox()
+        Me.btnDisplayRentalRates = New System.Windows.Forms.Button()
+        Me.lblSelectItem = New System.Windows.Forms.Label()
+        Me.lblSelectDuration = New System.Windows.Forms.Label()
+        Me.txtSelectItem = New System.Windows.Forms.TextBox()
+        Me.txtSelectDuration = New System.Windows.Forms.TextBox()
+        Me.btnDisplayBill = New System.Windows.Forms.Button()
+        Me.lstRentalRates = New System.Windows.Forms.ListBox()
+        Me.lstCustomerBill = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnDisplayRentalRates
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(178, 47)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnDisplayRentalRates.Location = New System.Drawing.Point(12, 12)
+        Me.btnDisplayRentalRates.Name = "btnDisplayRentalRates"
+        Me.btnDisplayRentalRates.Size = New System.Drawing.Size(178, 47)
+        Me.btnDisplayRentalRates.TabIndex = 0
+        Me.btnDisplayRentalRates.Text = "Display Rental Rates"
+        Me.btnDisplayRentalRates.UseVisualStyleBackColor = True
         '
-        'lblItem
+        'lblSelectItem
         '
-        Me.lblItem.AutoSize = True
-        Me.lblItem.Location = New System.Drawing.Point(12, 99)
-        Me.lblItem.Name = "lblItem"
-        Me.lblItem.Size = New System.Drawing.Size(125, 13)
-        Me.lblItem.TabIndex = 1
-        Me.lblItem.Text = "Select an item (1, 2, or 3)"
+        Me.lblSelectItem.AutoSize = True
+        Me.lblSelectItem.Location = New System.Drawing.Point(12, 99)
+        Me.lblSelectItem.Name = "lblSelectItem"
+        Me.lblSelectItem.Size = New System.Drawing.Size(128, 13)
+        Me.lblSelectItem.TabIndex = 1
+        Me.lblSelectItem.Text = "Select an item (1, 2, or 3):"
         '
-        'Label2
+        'lblSelectDuration
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(41, 128)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Label2"
+        Me.lblSelectDuration.AutoSize = True
+        Me.lblSelectDuration.Location = New System.Drawing.Point(12, 128)
+        Me.lblSelectDuration.Name = "lblSelectDuration"
+        Me.lblSelectDuration.Size = New System.Drawing.Size(128, 13)
+        Me.lblSelectDuration.TabIndex = 2
+        Me.lblSelectDuration.Text = "Select a duration (H or F):"
         '
-        'TextBox1
+        'txtSelectItem
         '
-        Me.TextBox1.Location = New System.Drawing.Point(160, 96)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(22, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.txtSelectItem.Location = New System.Drawing.Point(160, 96)
+        Me.txtSelectItem.Name = "txtSelectItem"
+        Me.txtSelectItem.Size = New System.Drawing.Size(22, 20)
+        Me.txtSelectItem.TabIndex = 3
         '
-        'TextBox2
+        'txtSelectDuration
         '
-        Me.TextBox2.Location = New System.Drawing.Point(160, 125)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(22, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.txtSelectDuration.Location = New System.Drawing.Point(160, 125)
+        Me.txtSelectDuration.Name = "txtSelectDuration"
+        Me.txtSelectDuration.Size = New System.Drawing.Size(22, 20)
+        Me.txtSelectDuration.TabIndex = 4
         '
-        'Button2
+        'btnDisplayBill
         '
-        Me.Button2.Location = New System.Drawing.Point(12, 196)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(178, 45)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnDisplayBill.Location = New System.Drawing.Point(12, 196)
+        Me.btnDisplayBill.Name = "btnDisplayBill"
+        Me.btnDisplayBill.Size = New System.Drawing.Size(178, 45)
+        Me.btnDisplayBill.TabIndex = 5
+        Me.btnDisplayBill.Text = "Display Customer Bill"
+        Me.btnDisplayBill.UseVisualStyleBackColor = True
         '
-        'ListBox1
+        'lstRentalRates
         '
-        Me.ListBox1.Font = New System.Drawing.Font("Courier New", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 14
-        Me.ListBox1.Location = New System.Drawing.Point(196, 12)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(412, 74)
-        Me.ListBox1.TabIndex = 6
+        Me.lstRentalRates.Font = New System.Drawing.Font("Courier New", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstRentalRates.FormattingEnabled = True
+        Me.lstRentalRates.ItemHeight = 14
+        Me.lstRentalRates.Location = New System.Drawing.Point(196, 12)
+        Me.lstRentalRates.Name = "lstRentalRates"
+        Me.lstRentalRates.Size = New System.Drawing.Size(412, 74)
+        Me.lstRentalRates.TabIndex = 6
         '
-        'ListBox2
+        'lstCustomerBill
         '
-        Me.ListBox2.Font = New System.Drawing.Font("Courier New", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.ItemHeight = 14
-        Me.ListBox2.Location = New System.Drawing.Point(196, 111)
-        Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(401, 130)
-        Me.ListBox2.TabIndex = 7
+        Me.lstCustomerBill.Font = New System.Drawing.Font("Courier New", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstCustomerBill.FormattingEnabled = True
+        Me.lstCustomerBill.ItemHeight = 14
+        Me.lstCustomerBill.Location = New System.Drawing.Point(196, 111)
+        Me.lstCustomerBill.Name = "lstCustomerBill"
+        Me.lstCustomerBill.Size = New System.Drawing.Size(401, 130)
+        Me.lstCustomerBill.TabIndex = 7
         '
         'frmEddiesEquipment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(627, 262)
-        Me.Controls.Add(Me.ListBox2)
-        Me.Controls.Add(Me.ListBox1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.lblItem)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.lstCustomerBill)
+        Me.Controls.Add(Me.lstRentalRates)
+        Me.Controls.Add(Me.btnDisplayBill)
+        Me.Controls.Add(Me.txtSelectDuration)
+        Me.Controls.Add(Me.txtSelectItem)
+        Me.Controls.Add(Me.lblSelectDuration)
+        Me.Controls.Add(Me.lblSelectItem)
+        Me.Controls.Add(Me.btnDisplayRentalRates)
         Me.Name = "frmEddiesEquipment"
         Me.Text = "Welcome to Eddie's Equipment Rental"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents lblItem As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
-    Friend WithEvents ListBox2 As System.Windows.Forms.ListBox
+    Friend WithEvents btnDisplayRentalRates As System.Windows.Forms.Button
+    Friend WithEvents lblSelectItem As System.Windows.Forms.Label
+    Friend WithEvents lblSelectDuration As System.Windows.Forms.Label
+    Friend WithEvents txtSelectItem As System.Windows.Forms.TextBox
+    Friend WithEvents txtSelectDuration As System.Windows.Forms.TextBox
+    Friend WithEvents btnDisplayBill As System.Windows.Forms.Button
+    Friend WithEvents lstRentalRates As System.Windows.Forms.ListBox
+    Friend WithEvents lstCustomerBill As System.Windows.Forms.ListBox
 
 End Class
