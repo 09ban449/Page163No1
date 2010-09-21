@@ -2,6 +2,7 @@
 
     Private Sub btnDisplayRentalRates_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDisplayRentalRates.Click
         Dim fmtStr As String = "{0, -23} {1, -13} {2, -9}"
+        'Listing the information in the First list box
         lstRentalRates.Items.Add(String.Format(fmtStr, "Price of Equipment", "Half-day", "Full-day"))
         lstRentalRates.Items.Add(String.Format(fmtStr, "1. Rug cleaner", "$16.00", "$24.00"))
         lstRentalRates.Items.Add(String.Format(fmtStr, "2. Lawn mower", "$12.00", "$18.00"))
@@ -14,9 +15,12 @@
         Dim dblPrice As Double
         Dim dblDeposit As Double = 30.0
         Dim fmtStr As String = "{0, -15} {1, -7} {2, -17}"
+        'Clearing the list box
         lstCustomerBill.Items.Clear()
+        'Data verification
         If IsNumeric(txtSelectItem.Text) Then
             If CInt(txtSelectItem.Text) >= 1 And CInt(txtSelectItem.Text) <= 3 Then
+                'good data path
                 Select Case CInt(txtSelectItem.Text)
                     Case 1
                         strItem = "Rug cleaner"
@@ -30,8 +34,9 @@
             MessageBox.Show("Please Enter 1, 2, or 3!", "DUH!")
 
         End If
-
+        'Data verification
         If txtSelectDuration.Text.ToUpper = "H" Or txtSelectDuration.Text.ToUpper = "F" Then
+            'good data path
             If txtSelectDuration.Text.ToUpper = "H" Then
                 strDuration = "Half-day"
                 Select Case CInt(txtSelectItem.Text)
@@ -59,6 +64,7 @@
         Else
             MessageBox.Show("Please Enter H or F", "DUH!")
         End If
+        'listing all the info in the list box
         lstCustomerBill.Items.Add("Receipt from Eddie's Equipment Rental")
         lstCustomerBill.Items.Add("")
         lstCustomerBill.Items.Add(String.Format(fmtStr, strItem, FormatCurrency(dblPrice), "(" & strDuration & " " & "rental" & ")"))
