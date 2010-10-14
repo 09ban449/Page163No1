@@ -15,6 +15,8 @@
         Dim dblPrice As Double
         Dim dblDeposit As Double = 30.0
         Dim fmtStr As String = "{0, -15} {1, -7} {2, -17}"
+        Dim intNum As Integer = 0
+
         'Clearing the list box
         lstCustomerBill.Items.Clear()
         'Data verification
@@ -32,7 +34,7 @@
             End If
         Else
             MessageBox.Show("Please Enter 1, 2, or 3!", "DUH!")
-
+            intNum = 1
         End If
         'Data verification
         If txtSelectDuration.Text.ToUpper = "H" Or txtSelectDuration.Text.ToUpper = "F" Then
@@ -63,14 +65,19 @@
             End If
         Else
             MessageBox.Show("Please Enter H or F", "DUH!")
+            intNum = 1
         End If
-        'listing all the info in the list box
-        lstCustomerBill.Items.Add("Receipt from Eddie's Equipment Rental")
-        lstCustomerBill.Items.Add("")
-        lstCustomerBill.Items.Add(String.Format(fmtStr, strItem, FormatCurrency(dblPrice), "(" & strDuration & " " & "rental" & ")"))
-        lstCustomerBill.Items.Add(String.Format(fmtStr, "Deposit", FormatCurrency(dblDeposit), ""))
-        lstCustomerBill.Items.Add("")
-        lstCustomerBill.Items.Add(String.Format(fmtStr, "Total", FormatCurrency(dblPrice + dblDeposit), ""))
 
+        'If there is an error in the first part of the program than nothing will print
+        If intNum = 1 Then
+        Else
+            'listing all the info in the list box
+            lstCustomerBill.Items.Add("Receipt from Eddie's Equipment Rental")
+            lstCustomerBill.Items.Add("")
+            lstCustomerBill.Items.Add(String.Format(fmtStr, strItem, FormatCurrency(dblPrice), "(" & strDuration & " " & "rental" & ")"))
+            lstCustomerBill.Items.Add(String.Format(fmtStr, "Deposit", FormatCurrency(dblDeposit), ""))
+            lstCustomerBill.Items.Add("")
+            lstCustomerBill.Items.Add(String.Format(fmtStr, "Total", FormatCurrency(dblPrice + dblDeposit), ""))
+        End If
     End Sub
 End Class
